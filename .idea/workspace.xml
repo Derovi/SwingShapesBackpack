@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Shapes" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Shapes" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Shapes" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="1ib7Z2eZaUQqAdg63jbg09PjvvC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.16089614" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propGUI" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="by.derovi.shapes.shapes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Shapes\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.Shapes-1.0-SNAPSHOT.jar">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shapes [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Shapes-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/Shapes-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Shapes [run]" />
+      <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="" />
+      <created>1602164494943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602164494943</updated>
+      <workItem from="1602164498056" duration="6218000" />
+      <workItem from="1602171096019" duration="2885000" />
+      <workItem from="1602175273822" duration="13392000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="587" y="199" key="#Inspections" timestamp="1602170601446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="587" y="199" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1602170601446" />
+    <state x="441" y="95" key="#Project_Structure" timestamp="1602170609556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="95" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602170609556" />
+    <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602172291480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602172291480" />
+    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1602188012349">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602188012349" />
+    <state x="641" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602170725214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="641" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602170725214" />
+    <state x="740" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1602175874792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602175874792" />
+    <state width="939" height="282" key="GridCell.Tab.0.bottom" timestamp="1602188430460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="939" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602188430460" />
+    <state width="939" height="282" key="GridCell.Tab.0.center" timestamp="1602188430460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="939" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602188430460" />
+    <state width="939" height="282" key="GridCell.Tab.0.left" timestamp="1602188430460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="939" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602188430460" />
+    <state width="939" height="282" key="GridCell.Tab.0.right" timestamp="1602188430460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="939" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602188430460" />
+    <state x="462" y="165" key="SettingsEditor" timestamp="1602175445117">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="462" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602175445117" />
+    <state x="552" y="131" key="new project wizard" timestamp="1602174001123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="131" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602174001123" />
+    <state x="619" y="242" key="run.anything.popup" timestamp="1602183218870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="619" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602183218870" />
+    <state x="636" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602188714150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602188714150" />
+  </component>
+</project>
