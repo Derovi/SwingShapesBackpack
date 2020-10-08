@@ -4,13 +4,13 @@ import by.derovi.shapes.Name
 
 @Name("Параллелепипед")
 class Parallelepiped(
-    @Name("Ширина")
+    @field:Name("Ширина")
     var width: Int = 0,
 
-    @Name("Длина")
+    @field:Name("Длина")
     var length: Int = 0,
 
-    @Name("Высота")
+    @field:Name("Высота")
     var height: Int = 0) : Shape() {
 
     override val volume: Double

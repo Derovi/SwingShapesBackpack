@@ -5,7 +5,7 @@ import kotlin.math.pow
 
 @Name("Сфера")
 class Sphere(
-    @Name("Радиус")
+    @field:Name("Радиус")
     val radius: Double = 0.0) : Shape() {
 
     override val volume: Double

@@ -38,19 +38,25 @@ object App {
         contentPane.add(JSeparator())
         //contentPane.add(JSeparator())
         shapesPane = JPanel(GridLayout(0, 1, 10, 10))
-        contentPane.add(shapesPane)
+        val scrollPane = JScrollPane(shapesPane)
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER)
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED)
+        scrollPane.maximumSize = Dimension(300, 300)
+        scrollPane.minimumSize = Dimension(300, 300)
+        scrollPane.preferredSize = Dimension(300, 300)
+
+        scrollPane.setBounds(50, 30, 300, 50)
+        contentPane.add(scrollPane)
+        scrollPane.add(JButton("ff"))
         frame.contentPane = contentPane
-        frame.size = Dimension(200, 300)
+        frame.size = Dimension(350, 450)
+        frame.setLocationRelativeTo(null)
         frame.isVisible = true
-        backpack.add(Sphere(10.0))
-        backpack.add(Sphere(1.0))
-        backpack.add(Cube(8))
-        backpack.add(Parallelepiped(8, 1, 2))
         changeSizeButton.addActionListener {
-            val dialog = JDialog()
+            val dialog = JDialog(frame)
+            dialog.setLocationRelativeTo(frame)
             val panel = JPanel(GridLayout(3, 1, 10, 10))
             dialog.minimumSize = Dimension(200, 200)
-            panel.minimumSize = Dimension(200, 200)
             panel.border = BorderFactory.createEmptyBorder(10, 10, 10, 10)
             panel.add(JLabel("Введите новый размер:"))
             val textField = JTextField(backpack.size.toString())
@@ -59,28 +65,30 @@ object App {
             panel.add(button)
             button.addActionListener {
                 val newSize = textField.text.toIntOrNull()
-                if (newSize != null && newSize > 0) {
+                if (newSize != null && newSize > backpack.shapes.size) {
                     backpack.size = newSize
                     dialog.dispose()
                     update()
                 } else {
-                    JOptionPane.showMessageDialog(dialog, "Размер должен быть положительным числом",
-                        "Размер указан не верно!", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(dialog, "Размер должен быть положительным числом и быть не меньше количества уже добавленных фигур",
+                        "Размер указан не верно!", JOptionPane.ERROR_MESSAGE)
                 }
             }
             dialog.contentPane = panel
             dialog.isVisible = true
         }
         addShapeButton.addActionListener {
-            val dialog = JDialog()
+            val dialog = JDialog(frame)
+            dialog.setLocationRelativeTo(frame)
             dialog.add(AddShapePane())
+            dialog.minimumSize = Dimension(80, 240)
             dialog.isVisible = true
         }
         update()
     }
 
     fun update() {
-        sizeLabel.text = "Размер: ${backpack.size}"
+        sizeLabel.text = "Размер: ${backpack.shapes.size} из ${backpack.size}"
         shapesPane.removeAll()
         for (shape in backpack.shapes) {
             shapesPane.add(ShapePane(shape))
@@ -91,7 +99,9 @@ object App {
                 contentPane.remove(component)
             }
         }
-
-        frame.revalidate();
+        if (backpack.shapes.isEmpty()) {
+            shapesPane.add(JPanel())
+        }
+        frame.revalidate()
     }
 }

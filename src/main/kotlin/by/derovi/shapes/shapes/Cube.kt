@@ -4,7 +4,7 @@ import by.derovi.shapes.Name
 
 @Name("Куб")
 class Cube(
-    @Name("Длина стороны")
+    @field:Name("Длина стороны")
     val side: Int = 0) : Shape() {
 
     override val volume: Double

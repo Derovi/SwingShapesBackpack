@@ -7,14 +7,12 @@ import java.util.*
 class Backpack<T : Shape>(var size: Int) {
     class BackPackOverflowException(private val size: Int) : Exception("Back pack overflow! (Size: $size)")
 
-    val shapes: MutableSet<T> = TreeSet<T> { sh1, sh2 -> if (sh1.volume == sh2.volume) 1 else (sh2.volume - sh1.volume).toInt() }
+    val shapes: MutableSet<T> = TreeSet<T> { sh1, sh2 -> if (sh1.volume == sh2.volume && !(sh1 === sh2)) 1 else (sh2.volume - sh1.volume).toInt() }
 
     fun add(shape: T) {
         if (shapes.size == size) {
             throw BackPackOverflowException(size)
         }
-        println("Add" + shapes.size)
         shapes.add(shape)
-        println(shapes.size)
     }
 }
