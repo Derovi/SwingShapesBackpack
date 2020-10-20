@@ -1,11 +1,9 @@
 package by.derovi.shapes
 
-import by.derovi.shapes.shapes.Cube
-import by.derovi.shapes.shapes.Parallelepiped
 import by.derovi.shapes.shapes.Shape
-import by.derovi.shapes.shapes.Sphere
-import com.sun.jdi.JDIPermission
 import java.awt.*
+import java.io.File
+import java.lang.Exception
 import javax.swing.*
 
 object App {
@@ -19,9 +17,14 @@ object App {
     val addShapeButton: JButton
     //val bottomLayout: JPanel
 
-    val backpack = Backpack<Shape>(20)
+    var backpack = Backpack<Shape>(20)
 
     init {
+        try {
+            backpack = parseBackpack(javaClass.classLoader.getResourceAsStream("backpack.xml"))
+        } catch (ex : Exception) {
+            ex.printStackTrace()
+        }
         frame = JFrame("App")
         contentPane = JPanel(FlowLayout(5, 10, 10))
         contentPane.border = BorderFactory.createEmptyBorder(10, 10, 0, 10)

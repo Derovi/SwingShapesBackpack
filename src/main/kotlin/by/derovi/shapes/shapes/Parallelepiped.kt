@@ -14,5 +14,7 @@ class Parallelepiped(
     var height: Int = 0) : Shape() {
 
     override val volume: Double
-        get() = width.toDouble() * length * height
+        get() {
+            return width.toDouble() * length * height
+        }
 }

@@ -1,23 +1,14 @@
 package by.derovi.shapes
 
-import by.derovi.shapes.shapes.Cube
-import by.derovi.shapes.shapes.Parallelepiped
-import by.derovi.shapes.shapes.Shape
-import by.derovi.shapes.shapes.Sphere
 import java.awt.Color
 import java.awt.GridLayout
 import java.lang.Exception
 import java.util.*
 import javax.swing.*
 import kotlin.collections.ArrayList
-import kotlin.reflect.KClass
 
 
 class AddShapePane : JPanel(GridLayout(0, 1)) {
-    companion object {
-        val shapes: List<KClass<out Shape>> = listOf(Cube::class, Parallelepiped::class, Sphere::class)
-    }
-
     init {
         build()
     }

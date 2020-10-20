@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<backpack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="backpackSchema.xsd">
+<backpack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="backpackSchema.xsd" size="18">
     <shape type = "Cube">
         <attribute name = "side" value = "228"/>
     </shape>
@@ -7,7 +7,7 @@
         <attribute name = "side" value = "15"/>
     </shape>
     <shape type = "Sphere">
-        <attribute name = "radius" value = "0"/>
+        <attribute name = "radius" value = "10"/>
     </shape>
     <shape type = "Parallelepiped">
         <attribute name = "width" value = "12"/>
