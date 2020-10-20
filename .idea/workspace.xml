@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/BackpackXMLParser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/ShapeUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/AddShapePane.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/AddShapePane.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/VerticalLayout.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/shapes/Parallelepiped.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/shapes/Parallelepiped.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/backpack.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backpack.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/BackpackXMLParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/BackpackXMLParser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <recent name="D:\Shapes\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SwingShapesBackpack [jar]">
+  <component name="RunManager" selected="JAR Application.Shapes-1.0-SNAPSHOT.jar">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -161,6 +155,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SwingShapesBackpack [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Shapes-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/Shapes-1.0-SNAPSHOT.jar" />
       <method v="2" />
@@ -169,11 +182,13 @@
       <item itemvalue="Gradle.Shapes [run]" />
       <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
       <item itemvalue="Gradle.SwingShapesBackpack [jar]" />
+      <item itemvalue="Gradle.SwingShapesBackpack [testClasses]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SwingShapesBackpack [jar]" />
         <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Gradle.SwingShapesBackpack [jar]" />
+        <item itemvalue="Gradle.SwingShapesBackpack [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +203,7 @@
       <workItem from="1602164498056" duration="6218000" />
       <workItem from="1602171096019" duration="2885000" />
       <workItem from="1602175273822" duration="21141000" />
-      <workItem from="1603203942895" duration="7976000" />
+      <workItem from="1603203942895" duration="11160000" />
     </task>
     <servers />
   </component>
@@ -224,30 +239,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602175874792" />
-    <state width="939" height="283" key="GridCell.Tab.0.bottom" timestamp="1603217468801">
+    <state width="939" height="283" key="GridCell.Tab.0.bottom" timestamp="1603221899490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603217468801" />
-    <state width="939" height="283" key="GridCell.Tab.0.center" timestamp="1603217468801">
+    <state width="939" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
+    <state width="939" height="283" key="GridCell.Tab.0.center" timestamp="1603221899490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603217468801" />
-    <state width="939" height="283" key="GridCell.Tab.0.left" timestamp="1603217468801">
+    <state width="939" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
+    <state width="939" height="283" key="GridCell.Tab.0.left" timestamp="1603221899490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603217468801" />
-    <state width="939" height="283" key="GridCell.Tab.0.right" timestamp="1603217468801">
+    <state width="939" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
+    <state width="939" height="283" key="GridCell.Tab.0.right" timestamp="1603221899490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603217468801" />
+    <state width="939" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
     <state x="462" y="165" key="SettingsEditor" timestamp="1602175445117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602175445117" />
-    <state x="670" y="252" width="579" height="534" key="find.popup" timestamp="1603215081263">
+    <state x="670" y="252" width="579" height="534" key="find.popup" timestamp="1603217630860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="252" width="579" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603215081263" />
+    <state x="670" y="252" width="579" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603217630860" />
     <state x="552" y="131" key="new project wizard" timestamp="1602174001123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,9 +271,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602183218870" />
-    <state x="646" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1602195827038">
+    <state x="647" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603219431524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="646" y="249" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602195827038" />
+    <state x="647" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603219431524" />
   </component>
 </project>

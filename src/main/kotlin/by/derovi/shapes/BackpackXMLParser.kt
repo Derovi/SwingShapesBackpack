@@ -1,11 +1,16 @@
 package by.derovi.shapes
 
 import by.derovi.shapes.shapes.Shape
-import java.io.File
 import java.io.InputStream
+import java.io.OutputStream
 import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.transform.Transformer
+import javax.xml.transform.TransformerFactory
+import javax.xml.transform.dom.DOMSource
+import javax.xml.transform.stream.StreamResult
 
-inline fun<reified T : Shape> parseBackpack(inputStream: InputStream): Backpack<T> {
+
+inline fun <reified T : Shape> importBackpack(inputStream: InputStream): Backpack<T> {
     val document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(inputStream)
     val backpack = Backpack<T>(document.childNodes.item(0).attributes.getNamedItem("size").nodeValue.toInt())
     val nodes = document.getElementsByTagName("shape")
@@ -29,4 +34,25 @@ inline fun<reified T : Shape> parseBackpack(inputStream: InputStream): Backpack<
         }
     }
     return backpack
+}
+
+inline fun <reified T : Shape> exportBackpack(backpack: Backpack<T>, outputStream: OutputStream) {
+    val document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument()
+    val backpackNode = document.createElement("backpack")
+    backpackNode.setAttribute("size", backpack.size.toString())
+    for (shape in backpack.shapes) {
+        val shapeNode = document.createElement("shape")
+        shapeNode.setAttribute("type", shape.javaClass.simpleName)
+        for (field in shape.javaClass.declaredFields) {
+            field.isAccessible = true
+            val attributeNode = document.createElement("attribute")
+            attributeNode.setAttribute("name", field.name)
+            attributeNode.setAttribute("value", field.getInt(shape).toString())
+            shapeNode.appendChild(attributeNode)
+        }
+        backpackNode.appendChild(shapeNode)
+    }
+    document.appendChild(backpackNode)
+    val trans: Transformer = TransformerFactory.newInstance().newTransformer()
+    trans.transform(DOMSource(document), StreamResult(outputStream))
 }

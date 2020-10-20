@@ -2,9 +2,8 @@ package by.derovi.shapes
 
 import by.derovi.shapes.shapes.Shape
 import java.awt.*
-import java.io.File
-import java.lang.Exception
 import javax.swing.*
+
 
 object App {
     val sizeLabel = JLabel()
@@ -15,16 +14,16 @@ object App {
     val backpackSizeLayout: JPanel
     val changeSizeButton: JButton
     val addShapeButton: JButton
-    //val bottomLayout: JPanel
 
     var backpack = Backpack<Shape>(20)
 
     init {
         try {
-            backpack = parseBackpack(javaClass.classLoader.getResourceAsStream("backpack.xml"))
-        } catch (ex : Exception) {
+            backpack = importBackpack(javaClass.classLoader.getResourceAsStream("backpack.xml"))
+        } catch (ex: Exception) {
             ex.printStackTrace()
         }
+
         frame = JFrame("App")
         contentPane = JPanel(FlowLayout(5, 10, 10))
         contentPane.border = BorderFactory.createEmptyBorder(10, 10, 0, 10)
@@ -73,8 +72,12 @@ object App {
                     dialog.dispose()
                     update()
                 } else {
-                    JOptionPane.showMessageDialog(dialog, "Размер должен быть положительным числом и быть не меньше количества уже добавленных фигур",
-                        "Размер указан не верно!", JOptionPane.ERROR_MESSAGE)
+                    JOptionPane.showMessageDialog(
+                        dialog,
+                        "Размер должен быть положительным числом и быть не меньше количества уже добавленных фигур",
+                        "Размер указан не верно!",
+                        JOptionPane.ERROR_MESSAGE
+                    )
                 }
             }
             dialog.contentPane = panel
@@ -87,6 +90,28 @@ object App {
             dialog.minimumSize = Dimension(80, 240)
             dialog.isVisible = true
         }
+        val menuBar = JMenuBar()
+        val menu = JMenu("File")
+        menuBar.add(menu)
+        val importItem = JMenuItem("Import")
+        val exportItem = JMenuItem("Export")
+        menu.add(importItem)
+        menu.add(exportItem)
+        frame.jMenuBar = menuBar
+        importItem.addActionListener {
+            val fc = JFileChooser()
+            if (fc.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+                backpack = importBackpack(fc.selectedFile.inputStream())
+            }
+            update()
+        }
+        exportItem.addActionListener {
+            val fc = JFileChooser()
+            if (fc.showSaveDialog(frame) == JFileChooser.APPROVE_OPTION) {
+                exportBackpack(backpack, fc.selectedFile.outputStream())
+            }
+        }
+
         update()
     }
 
