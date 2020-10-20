@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="" />
+    <list default="true" id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/backpack.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/backpackSchema.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +61,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -75,7 +83,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16089614" />
@@ -91,13 +99,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Shapes-1.0-SNAPSHOT.jar">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +156,7 @@
       <workItem from="1602164498056" duration="6218000" />
       <workItem from="1602171096019" duration="2885000" />
       <workItem from="1602175273822" duration="21141000" />
+      <workItem from="1603203942895" duration="4406000" />
     </task>
     <servers />
   </component>
@@ -161,10 +172,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="710" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1602190114261" />
-    <state x="441" y="95" key="#Project_Structure" timestamp="1602170609556">
+    <state x="441" y="95" key="#Project_Structure" timestamp="1603208621774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="441" y="95" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602170609556" />
+    <state x="441" y="95" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1603208621774" />
     <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602172291480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,22 +192,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602175874792" />
-    <state width="939" height="282" key="GridCell.Tab.0.bottom" timestamp="1602196067148">
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1603211647489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602196067148" />
-    <state width="939" height="282" key="GridCell.Tab.0.center" timestamp="1602196067148">
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603211647489" />
+    <state width="1878" height="282" key="GridCell.Tab.0.center" timestamp="1603211647489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602196067148" />
-    <state width="939" height="282" key="GridCell.Tab.0.left" timestamp="1602196067148">
+    <state width="1878" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603211647489" />
+    <state width="1878" height="282" key="GridCell.Tab.0.left" timestamp="1603211647488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602196067148" />
-    <state width="939" height="282" key="GridCell.Tab.0.right" timestamp="1602196067148">
+    <state width="1878" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603211647488" />
+    <state width="1878" height="282" key="GridCell.Tab.0.right" timestamp="1603211647489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602196067148" />
+    <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603211647489" />
     <state x="462" y="165" key="SettingsEditor" timestamp="1602175445117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

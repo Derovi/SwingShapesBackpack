@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backpack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="backpackSchema.xsd">
+    <shape type = "Cube">
+        <attribute name = "side" value = "228"/>
+    </shape>
+    <shape type = "Cube">
+        <attribute name = "side" value = "15"/>
+    </shape>
+    <shape type = "Sphere">
+        <attribute name = "radius" value = "0"/>
+    </shape>
+    <shape type = "Parallelepiped">
+        <attribute name = "width" value = "12"/>
+        <attribute name = "length" value = "6"/>
+        <attribute name = "height" value = "14"/>
+    </shape>
+</backpack>
