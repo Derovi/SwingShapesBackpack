@@ -7,7 +7,8 @@
     <list default="true" id="a3d5e9e3-39d6-4026-8126-4dfc44dd9250" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/BackpackXMLParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/BackpackXMLParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/Backpack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/by/derovi/shapes/Backpack.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/backpackSchema.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backpackSchema.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stylicy" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16089614" />
@@ -104,15 +105,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Shapes-1.0-SNAPSHOT.jar">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,6 +131,25 @@
           </list>
         </option>
         <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SwingShapesBackpack [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
@@ -180,14 +198,16 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.Shapes [run]" />
-      <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
       <item itemvalue="Gradle.SwingShapesBackpack [jar]" />
       <item itemvalue="Gradle.SwingShapesBackpack [testClasses]" />
+      <item itemvalue="Gradle.SwingShapesBackpack [clean]" />
+      <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.Shapes-1.0-SNAPSHOT.jar" />
         <item itemvalue="Gradle.SwingShapesBackpack [jar]" />
+        <item itemvalue="Gradle.SwingShapesBackpack [clean]" />
         <item itemvalue="Gradle.SwingShapesBackpack [testClasses]" />
       </list>
     </recent_temporary>
@@ -203,7 +223,9 @@
       <workItem from="1602164498056" duration="6218000" />
       <workItem from="1602171096019" duration="2885000" />
       <workItem from="1602175273822" duration="21141000" />
-      <workItem from="1603203942895" duration="11160000" />
+      <workItem from="1603203942895" duration="13675000" />
+      <workItem from="1603302023137" duration="60000" />
+      <workItem from="1603310145563" duration="1391000" />
     </task>
     <servers />
   </component>
@@ -239,30 +261,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602175874792" />
-    <state width="939" height="283" key="GridCell.Tab.0.bottom" timestamp="1603221899490">
+    <state x="741" y="275" key="FileChooserDialogImpl" timestamp="1603302083497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
-    <state width="939" height="283" key="GridCell.Tab.0.center" timestamp="1603221899490">
+    <state x="741" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603302083497" />
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1603311434014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
-    <state width="939" height="283" key="GridCell.Tab.0.left" timestamp="1603221899490">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603311434014" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1603311434013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
-    <state width="939" height="283" key="GridCell.Tab.0.right" timestamp="1603221899490">
+    <state width="1878" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603311434013" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1603311434013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="939" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603221899490" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603311434013" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1603311434014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603311434014" />
     <state x="462" y="165" key="SettingsEditor" timestamp="1602175445117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602175445117" />
-    <state x="670" y="252" width="579" height="534" key="find.popup" timestamp="1603217630860">
+    <state x="670" y="252" width="579" height="534" key="find.popup" timestamp="1603222709275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="252" width="579" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603217630860" />
+    <state x="670" y="252" width="579" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603222709275" />
     <state x="552" y="131" key="new project wizard" timestamp="1602174001123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,9 +297,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="619" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602183218870" />
-    <state x="647" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603219431524">
+    <state x="650" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1603311228441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="647" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603219431524" />
+    <state x="650" y="253" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603311228441" />
   </component>
 </project>

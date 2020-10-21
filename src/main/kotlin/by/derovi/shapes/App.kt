@@ -1,8 +1,12 @@
 package by.derovi.shapes
 
 import by.derovi.shapes.shapes.Shape
+import org.xml.sax.SAXException
 import java.awt.*
 import javax.swing.*
+import javax.xml.transform.stream.StreamSource
+import javax.xml.validation.SchemaFactory
+import javax.xml.validation.Validator
 
 
 object App {
@@ -101,7 +105,20 @@ object App {
         importItem.addActionListener {
             val fc = JFileChooser()
             if (fc.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
-                backpack = importBackpack(fc.selectedFile.inputStream())
+                val factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema")
+                val schema = factory.newSchema(StreamSource(javaClass.classLoader.getResourceAsStream("backpackSchema.xsd")))
+                val validator: Validator = schema.newValidator()
+                try {
+                    validator.validate(StreamSource(fc.selectedFile.inputStream()))
+                    backpack = importBackpack(fc.selectedFile.inputStream())
+                } catch (ex: SAXException) {
+                    JOptionPane.showMessageDialog(
+                        frame,
+                        ex.message,
+                        "Validation error",
+                        JOptionPane.ERROR_MESSAGE
+                    )
+                }
             }
             update()
         }

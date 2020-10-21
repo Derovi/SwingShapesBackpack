@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.backpack.dero.by/">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="backpack">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="shape" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="attribute">
+                            <xs:element name="attribute" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:attribute name="name" type="xs:string" use="required"/>
-                                    <xs:attribute name="value" type="xs:int" use="required">
+                                    <xs:attribute name="value" use="required">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:int">
                                                 <xs:minInclusive value="1"/>
@@ -20,7 +20,7 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="type" type="xs:string" use="required">
+                        <xs:attribute name="type" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
                                     <xs:enumeration value="Cube"/>
